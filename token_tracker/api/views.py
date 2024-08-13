@@ -3,11 +3,13 @@ from rest_framework.response import Response
 from web3 import Web3
 from .models import HistoricalData
 import os
+import json
 
+with open('path/to/token_abi.json', 'r') as abi_file:
+    token_abi = json.load(abi_file)
 # Configure Web3
 infura_url = os.getenv('INFURA_URL')
 web3 = Web3(Web3.HTTPProvider(infura_url))
-token_abi=os.getenv('TOKEN_ABI')
 
 @api_view(['GET'])
 def token_balance(request):
