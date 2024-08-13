@@ -1,3 +1,6 @@
 [submodule "frontend/token-tracker"]
 	path = frontend/token-tracker
 	url = https://github.com/shubha987/Crypto-Tracker-Frontend-.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/shubha987/Crypto-Tracker-Frontend-.git
